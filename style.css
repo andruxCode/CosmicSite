@@ -479,10 +479,10 @@ body {
 .btn-github {
   background: transparent;
   position: relative;
-  padding: 0px 15px;
+  padding: 0px 10px;
   display: flex;
   align-items: center;
-  font-size: 17px;
+  font-size: 14px;
   font-weight: 600;
   text-decoration: none;
   cursor: pointer;
@@ -496,7 +496,7 @@ body {
 }
 
 .btn-github span {
-  margin: 10px;
+  margin: 6px;
 }
 
 .btn-github::before {
@@ -544,10 +544,10 @@ body.light-theme .btn-github:hover::before {
 .btn-discord {
   background: transparent;
   position: relative;
-  padding: 0px 15px;
+  padding: 0px 10px;
   display: flex;
   align-items: center;
-  font-size: 17px;
+  font-size: 14px;
   font-weight: 600;
   text-decoration: none;
   cursor: pointer;
@@ -561,7 +561,7 @@ body.light-theme .btn-github:hover::before {
 }
 
 .btn-discord span {
-  margin: 10px;
+  margin: 6px;
 }
 
 .btn-discord::before {
