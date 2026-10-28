@@ -479,7 +479,7 @@ body {
 .btn-github {
   background: transparent;
   position: relative;
-  padding: 5px 15px;
+  padding: 0px 15px;
   display: flex;
   align-items: center;
   font-size: 17px;
@@ -530,7 +530,7 @@ body {
 .btn-discord {
   background: transparent;
   position: relative;
-  padding: 5px 15px;
+  padding: 0px 15px;
   display: flex;
   align-items: center;
   font-size: 17px;
