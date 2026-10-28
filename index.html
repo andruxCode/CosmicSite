@@ -11,8 +11,23 @@
 </head>
 <body>
 
-    <!-- НАДО СДЕЛАТЬ СМЕНУ ЦВЕТА КНОПОК (GITHUB, DISCORD) ПРИ СМЕНЕ ТЕМЫ-->
+    <button class="menu-button" id="menuToggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="menuPanel">
+        <span class="menu__icon" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+        </span>
+    </button>
+    <nav class="menu-panel" id="menuPanel" aria-label="Main navigation" hidden>
+        <a href="index.html" data-en="Home" data-ru="Главная">Home</a>
+        <a href="about.html" data-en="About us" data-ru="О нас">About us</a>
+        <a href="launcher.html" data-en="About the launcher" data-ru="О лаунчере">About the launcher</a>
+        <a href="faq.html" data-en="FAQ" data-ru="FAQ">FAQ</a>
+    </nav>
     <div class="top-right-actions">
+        <a class="buy-me-coffee" href="https://www.buymeacoffee.com/niwobyte" target="_blank" rel="noopener noreferrer" aria-label="Buy me a coffee">
+            <img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee ♥️&emoji=&slug=niwobyte&button_colour=FFDD00&font_colour=000000&font_family=Lato&outline_colour=000000&coffee_colour=ffffff" alt="Buy me a coffee" />
+        </a>
 
         <a class="btn-github" href="https://github.com/andruxCode/CosmicSite" target="_blank" rel="noopener noreferrer">
             <svg
@@ -28,7 +43,7 @@
             <span>GitHub</span>
         </a>
 
-        <a class="btn-discord" href="https://discord.gg/3Gze3sdbxM" target="_blank" rel="noopener noreferrer">
+        <a class="btn-discord" href="https://discord.com/" target="_blank" rel="noopener noreferrer">
             <svg viewBox="0 0 16 16" class="bi bi-discord" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
                 <path d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z"></path>
             </svg>
@@ -39,7 +54,6 @@
         <button class="theme-toggle" id="themeToggle">
             <i class="fa-solid fa-sun" id="themeIcon"></i>
         </button>
-        
    </div>
 
     <header class="header-box">
@@ -49,7 +63,7 @@
     </header>
 
     <main class="main-content">
-        <section class="hero">
+        <section class="hero" id="home">
             <span class="badge" data-en="MINECRAFT CLIENT" data-ru="МАЙНКРАФТ КЛИЕНТ">MINECRAFT CLIENT</span>
             <h2 data-en="Elevate Your Minecraft Experience" data-ru="Улучши свой игровой опыт в Minecraft">Elevate Your Minecraft Experience</h2>
             <p data-en="Simple installation, maximum capabilities." data-ru="Простая установка, максимум возможностей.">Simple installation, maximum capabilities.</p>
@@ -58,40 +72,9 @@
             </div>
         </section>
 
-        <section class="features">
-            <div class="feature-card">
-                <i class="fa-solid fa-bolt"></i>
-                <h3 data-en="Quick start" data-ru="Быстрый старт">Quick start</h3>
-                <p data-en="You can do many things with a single click." data-ru="Одним щелчком можно сделать многое.">You can do many things with a single click.</p>
-            </div>
-            <div class="feature-card">
-                <i class="fa-solid fa-cubes"></i>
-                <h3 data-en="Cross-platform installer" data-ru="Кроссплатформенный установщик">Cross-platform installer</h3>
-                <p data-en="You can download mods from multiple sources all in one place." data-ru="Вы можете с одного места качать моды с несколько источников.">You can download mods from multiple sources all in one place.</p>
-            </div>
-        </section>
-
-        <section class="faq-section">
-            <h2 data-en="Frequently Asked Questions" data-ru="Часто задаваемые вопросы">Frequently Asked Questions</h2>
-            <div class="faq-grid">
-                <div class="faq-item">
-                    <h4 data-en="Is Cosmic Launcher free to use?" data-ru="Cosmic Launcher бесплатный?">Is Cosmic Launcher free to use?</h4>
-                    <p data-en="Yes, Cosmic Launcher is completely free for all Minecraft players." data-ru="Да, лаунчер полностью бесплатен для всех игроков Minecraft.">Yes, Cosmic Launcher is completely free for all Minecraft players.</p>
-                </div>
-                <div class="faq-item">
-                    <h4 data-en="Do I need an official Minecraft account?" data-ru="Нужен ли официальный аккаунт?">Do I need an official Minecraft account?</h4>
-                    <p data-en="Yes, you need to use only official Microsoft accounts." data-ru="Да, вам нужно использовать только официальные аккаунты Microsoft">Yes, you need to use only official Microsoft accounts.</p>
-                </div>
-                <div class="faq-item">
-                    <h4 data-en="How do I install mods?" data-ru="Как устанавливать моды?">How do I install mods?</h4>
-                    <p data-en="Simply choose your preferred modpack inside the launcher settings and hit play." data-ru="Просто выберите нужный модпак в настройках лаунчера и нажмите играть.">Simply choose your preferred modpack inside the launcher settings and hit play.</p>
-                </div>
-                <div class="faq-item">
-                    <h4 data-en="Is it safe for my PC?" data-ru="Это безопасно для ПК?">Is it safe for my PC?</h4>
-                    <p data-en="An open-source launcher with verified files, ensuring 100% security." data-ru="Лаунчер с открытым исходным кодом и проверенными файлами, что гарантирует 100% безопасность.">An open-source launcher with verified files, ensuring 100% security.</p>
-                </div>
-            </div>
-        </section>
+        <div class="launcher-preview">
+            <img src="launcher.png" alt="Cosmic Launcher preview" />
+        </div>
     </main>
 
     <footer class="site-footer">
@@ -102,34 +85,6 @@
         <p>NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT.</p>
     </footer>
 
-    <script>
-        const themeToggle = document.getElementById('themeToggle');
-        const themeIcon = document.getElementById('themeIcon');
-        const langToggle = document.getElementById('langToggle');
-
-        themeToggle.addEventListener('click', () => {
-            document.body.classList.toggle('light-theme');
-            if (document.body.classList.contains('light-theme')) {
-                themeIcon.className = 'fa-solid fa-moon';
-            } else {
-                themeIcon.className = 'fa-solid fa-sun';
-            }
-        });
-
-        let currentLang = 'en';
-        langToggle.addEventListener('click', () => {
-            currentLang = currentLang === 'en' ? 'ru' : 'en';
-            langToggle.textContent = currentLang.toUpperCase();
-            
-            document.querySelectorAll('[data-en]').forEach(el => {
-                if (el.tagName === 'A' && el.querySelector('i')) {
-                    const icon = el.querySelector('i').outerHTML;
-                    el.innerHTML = icon + ' ' + el.getAttribute(`data-${currentLang}`);
-                } else {
-                    el.textContent = el.getAttribute(`data-${currentLang}`);
-                }
-            });
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

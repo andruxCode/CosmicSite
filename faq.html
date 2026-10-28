@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ | Cosmic Launcher</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/png" sizes="1x1" href="icon/Cosmic-Launcher.png">
+</head>
+<body>
+    <button class="menu-button" id="menuToggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="menuPanel">
+        <span class="menu__icon" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+        </span>
+    </button>
+    <nav class="menu-panel" id="menuPanel" aria-label="Main navigation" hidden>
+        <a href="index.html" data-en="Home" data-ru="Главная">Home</a>
+        <a href="about.html" data-en="About us" data-ru="О нас">About us</a>
+        <a href="launcher.html" data-en="About the launcher" data-ru="О лаунчере">About the launcher</a>
+        <a href="faq.html" data-en="FAQ" data-ru="FAQ">FAQ</a>
+    </nav>
+
+    <div class="top-right-actions">
+        <a class="btn-github" href="https://github.com/andruxCode/CosmicSite" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-github" aria-hidden="true"></i>
+            <span>GitHub</span>
+        </a>
+        <a class="btn-discord" href="https://discord.com/" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-discord" aria-hidden="true"></i>
+            <span>Discord</span>
+        </a>
+        <button class="lang-toggle" id="langToggle" type="button">EN</button>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle theme">
+            <i class="fa-solid fa-sun" id="themeIcon" aria-hidden="true"></i>
+        </button>
+    </div>
+
+    <header class="header-box">
+        <h1><span class="title-text">Cosmic Launcher</span></h1>
+    </header>
+
+    <main class="main-content">
+        <section class="faq-section">
+            <h2 data-en="Frequently Asked Questions" data-ru="Часто задаваемые вопросы">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3 data-en="Is Cosmic Launcher free to use?" data-ru="Cosmic Launcher бесплатный?">Is Cosmic Launcher free to use?</h3>
+                    <p data-en="Yes, Cosmic Launcher is completely free for all Minecraft players." data-ru="Да, лаунчер полностью бесплатен для всех игроков Minecraft.">Yes, Cosmic Launcher is completely free for all Minecraft players.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 data-en="Do I need an official Minecraft account?" data-ru="Нужен ли официальный аккаунт Minecraft?">Do I need an official Minecraft account?</h3>
+                    <p data-en="Yes, you need to use only official Microsoft accounts." data-ru="Да, вам нужно использовать только официальные аккаунты Microsoft.">Yes, you need to use only official Microsoft accounts.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 data-en="How do I install mods?" data-ru="Как устанавливать моды?">How do I install mods?</h3>
+                    <p data-en="Simply choose your preferred modpack inside the launcher settings and hit play." data-ru="Просто выберите нужный модпак в настройках лаунчера и нажмите играть.">Simply choose your preferred modpack inside the launcher settings and hit play.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 data-en="Is it safe for my PC?" data-ru="Это безопасно для ПК?">Is it safe for my PC?</h3>
+                    <p data-en="An open-source launcher with verified files, ensuring 100% security." data-ru="Лаунчер с открытым исходным кодом и проверенными файлами, что гарантирует 100% безопасность.">An open-source launcher with verified files, ensuring 100% security.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p data-en="© 2026 Cosmic Launcher. All rights reserved. Not affiliated with Mojang Studios or Microsoft."
+           data-ru="© 2026 Cosmic Launcher. Все права защищены. Не связан с Mojang Studios или Microsoft.">
+            © 2026 Cosmic Launcher. All rights reserved. Not affiliated with Mojang Studios or Microsoft.
+        </p>
+        <p>NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
